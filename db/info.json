@@ -1,0 +1,29 @@
+{
+    "songs": [
+      {
+        "title": "Unknown",
+        "artist": "idk it can be anyone",
+        "name": "",
+        "art": ""
+      },
+      {
+        "title": "Ugoku, Ugoku",
+        "artist": "Inori Minase (Chito) and Yurika Kubo (Yuuri)",
+        "name": "song1.mp3",
+        "art": "art1.jpg"
+      },
+      {
+        "title": "Thiên Lý Ơi - Jack-J97 「Cukak Remix」",
+        "artist": "Cukak",
+        "name": "song2.mp3",
+        "art": "art2.jpg"
+      },
+      {
+        "title": "Have a nice day",
+        "artist": "WORLD ORDER",
+        "name": "song3.mp3",
+        "art": "art3.jpg"
+      }
+    ]
+  }
+  

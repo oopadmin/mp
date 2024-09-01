@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotPot</title>
+    <link rel="stylesheet" href="mp.css">
+    <script src="https://kit.fontawesome.com/b6681d6f85.js" crossorigin="anonymous"></script>
+    <script src="mp.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="circle">
+                <a href="../index.html"><i class="fa-solid fa-tree"></i></a>
+            </div>
+        </nav>
+        <img id="art" src="" class="song-img" draggable="false" ondragstart="return false;">
+        <div class="songInfo">   
+            <h1 id="Title">test</h1>
+            <p id="Artist">test</p>
+        </div>
+        <audio id="song">
+            <source src="" type="audio/mpeg">
+        </audio>
+        <div class="runningbar">
+            <div><i onclick="Repeat()" class="fa-solid fa-repeat" id="repeatIcon"></i></div>
+            <input type="range" value="0" id="progress">
+        </div>
+        <div class="controls">
+            <div onclick="backwardSong()"><i class="fa-solid fa-backward-step"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div onclick="forwardSong()"><i class="fa-solid fa-forward-step"></i></div>
+        </div>
+    </div>
+
+</body>
+</html>

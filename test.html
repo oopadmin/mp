@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Text with Slick Carousel</title>
+    
+    <!-- Thêm Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <!-- Thêm jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Thêm Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <style>
+        .slick-marquee {
+            width: 80%; /* Chiều rộng khung chứa */
+            margin: 50px auto; /* Căn giữa khung chứa */
+            overflow: hidden; /* Ẩn nội dung tràn */
+            border: 1px solid #ddd; /* Đường viền */
+            padding: 10px; /* Khoảng cách bên trong */
+            box-sizing: border-box; /* Bao gồm đường viền và padding vào chiều rộng tổng */
+            background-color: #f9f9f9; /* Màu nền khung chứa */
+        }
+        .slick-slide {
+            text-align: center; /* Căn giữa nội dung */
+            padding: 10px; /* Khoảng cách bên trong cho mỗi phần tử */
+            font-size: 1.2em; /* Kích thước chữ */
+            color: #333; /* Màu chữ */
+        }
+    </style>
+</head>
+<body>
+
+<div class="slick-marquee">
+    <div>Đây là dòng văn bản 1 chạy ngang mượt mà.</div>
+    <div>Đây là dòng văn bản 2 có thể tùy chỉnh dễ dàng.</div>
+    <div>Đây là dòng văn bản 3 sử dụng Slick Carousel.</div>
+    <div>Đây là dòng văn bản 4 với hiệu ứng đẹp mắt.</div>
+    <div>Đây là dòng văn bản 5, dừng khi bạn di chuột vào.</div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.slick-marquee').slick({
+            speed: 3000, // Thời gian cuộn (ms)
+            autoplay: true, // Tự động cuộn
+            autoplaySpeed: 0, // Tốc độ tự động (ms)
+            cssEase: 'linear', // Hiệu ứng mượt mà
+            slidesToShow: 1, // Số slide hiển thị cùng lúc
+            centerMode: true, // Trung tâm slide
+            variableWidth: true, // Chiều rộng thay đổi
+            infinite: true, // Lặp lại vô tận
+            arrows: false, // Không hiển thị mũi tên điều hướng
+            pauseOnHover: true // Tạm dừng khi di chuột vào
+        });
+    });
+</script>
+
+</body>
+</html>
